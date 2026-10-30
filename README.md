@@ -1,104 +1,110 @@
-Membres du groupe :
-SEFFAR Nordine nordine.seffar@etu.univ-orleans.fr
-GAHLAS Aicha aicha.gahlas@etu.univ-orleans.fr
-MIMOUN Ali ali.mimoun@etu.univ-orleans.fr
-AISSAT Fatima fatima.aissat@etu.univ-orleans.fr
+# 📚 Django Collection Manager
 
-Commandes :
+Application web **Django** de gestion de **collections** et de leurs **éléments**. Chaque utilisateur peut créer ses collections, y ajouter des éléments, et seul le **créateur** d'un objet peut en voir le détail, le modifier ou le supprimer.
 
-ex 1 :
+> Projet réalisé dans le cadre du module *Framework Web 1* — Master Informatique, Université d'Orléans (2024-2025).
 
-docker build . -f Dockerfile --build-arg USERNAME=$(basename $(id -un) @campus.univ-orleans.fr) --build-arg USERID=$(id -u) --tag cc
+---
 
-docker run -ti -p 8080:8000 -v $PWD:/home/user/workspace cc
+## ✨ Fonctionnalités
 
-django-admin startproject cc
+- 📋 **Liste publique** des collections et éléments
+- 🔐 **Authentification** — connexion requise pour accéder aux détails et aux actions
+- 👤 **Droits par créateur** — seul l'auteur d'une collection ou d'un élément peut la consulter en détail, la modifier ou la supprimer
+- 🗂️ **CRUD complet** sur les collections et les éléments (ajout, détail, suppression)
+- 🧩 **Relation** collection → éléments
+- 🛠️ **Interface d'administration** Django
 
-cd cc
+---
 
-python3 manage.py startapp collec_management
+## 🏗️ Structure du projet
 
-python3 manage.py runserver 0.0.0.0:8000 &
+```
+django-collection-manager/
+├── cc/                         # Configuration du projet Django
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py / asgi.py
+├── collec_management/          # Application principale
+│   ├── models.py               # Collec, Element
+│   ├── views.py                # Logique métier + contrôle d'accès
+│   ├── forms.py                # Formulaires
+│   ├── urls.py
+│   ├── admin.py
+│   ├── migrations/
+│   ├── fixtures/examples.json  # Données de démonstration
+│   └── templates/              # Pages HTML (liste, détail, ajout, login…)
+└── manage.py
+```
 
-ex 2 :
+---
 
-ex 3 :
+## 🛠️ Stack technique
 
-python3 manage.py makemigrations
+| | |
+|---|---|
+| **Framework** | Django (Python) |
+| **Base de données** | SQLite |
+| **Templates** | Django Templates (HTML) |
+| **Auth** | Système d'authentification Django |
+| **Conteneurisation** | Docker |
 
-python3 manage.py sqlmigrate collec_management 0001
+---
 
-python3 manage.py migrate
+## 🚀 Installation & lancement
 
+### Avec Python (local)
 
-python3 manage.py shell
+```bash
+# 1. Environnement virtuel
+python -m venv venv
+source venv/bin/activate      # Windows : venv\Scripts\activate
 
-exemple de création :
-from collec_management.models import Collec
-from django.utils import timezone
-Collec.objects.all()
-m = Collec(title="collectiontest", description="premiere collection pour verifier", date_creation=timezone.now())
-m.id
-m.save()
-m.id
+# 2. Dépendances
+pip install django
 
-ex 4 :
+# 3. Configurer le SECRET_KEY (voir section ci-dessous)
 
-python3 manage.py loaddata examples.json
-
-ex 5 :
-
-ex 6 :
-
-ex 7 :
-
-ex 8 :
-
-ex 9 :
-
-ex 10 :
-
-ex 11 :
-
-python manage.py createsuperuser
-
-Admin
-
-Admin@gmail.com
-
-Admin
-
-Admin
-
-Admin
-
-
-ex 12 :
-
-python manage.py makemigrations
-
-python manage.py sqlmigrate collec_management 0001
-
+# 4. Base de données + données de démo
 python manage.py migrate
-
-ex 13 :
-
-python manage.py dumpdata collec_management.Element --indent 2 >> collec_management/fixtures/examples.json
-
 python manage.py loaddata examples
 
-ex 14 :
+# 5. (optionnel) compte administrateur
+python manage.py createsuperuser
 
-ex 15 :
+# 6. Lancer le serveur
+python manage.py runserver
+```
 
-ex 16 :
+Application accessible sur `http://localhost:8000`.
 
-ex 17 :
+### Avec Docker
 
-ex 18 :
+```bash
+docker build . -f Dockerfile --tag cc
+docker run -ti -p 8080:8000 -v $PWD:/home/user/workspace cc
+python manage.py runserver 0.0.0.0:8000
+```
 
-python manage.py makemigrations
+---
 
-python manage.py sqlmigrate collec_management 0001
+## 🔑 Configuration du SECRET_KEY
 
-python manage.py migrate
+Par sécurité, la vraie clé n'est **pas** versionnée. Dans `cc/settings.py`, la valeur est un placeholder (`django-insecure-change-me`). Génère ta propre clé avant usage :
+
+```bash
+python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+```
+
+puis remplace la valeur de `SECRET_KEY` (idéalement via une variable d'environnement en production).
+
+---
+
+## 👥 Auteurs
+
+Projet de groupe — Master Informatique, Université d'Orléans :
+
+- **Gahlas Aicha** — [github.com/GahlasAicha](https://github.com/GahlasAicha)
+- **Seffar Nordine**
+- **Mimoun Ali**
+- **Aissat Fatima**
