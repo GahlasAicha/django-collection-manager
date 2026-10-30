@@ -1,0 +1,49 @@
+{% extends 'collec_management/menu.html' %}
+
+
+
+{% block title %}Detail des collections{% endblock %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+</head>
+<body>
+    <ol>
+        <ul>
+        <li>Titre: {{ collection.title }} </li></br>
+        <li>Descritpion: {{ collection.description }} </li></br>
+        <li>Date:  {{ collection.date_creation }} </li></br>
+
+
+        <a class="nav-link" href='{% url "ajout_element"  %}' >->Ajouter un élément à une collection</a></br>
+
+
+            <p>Liste des éléments de cette collection</p>
+        <ol > {% for el in element %}
+            <ul class="navbar-nav">
+            <li class="nav-item">Titre: {{ el.title }} </li></br>
+            <li class="nav-item">Date:  {{ el.date_ajout }} </li></br>
+            <li class="nav-item">Description:  {{ el.description }} </li></br>
+            <li class="nav-item">Valeur:  {{ el.value }} </li></br>
+            <li class="nav-item">Quantité:  {{ el.quantity }} </li></br>
+            <li class="nav-item"><a class="nav-link" href="http://localhost:8080/element/{{ el.id }}/">Liens détail élément n° {{ el.id }}</a> </li></br>
+            
+            
+    
+        </ul>
+        <a class="nav-link" href='{% url "element_detail" el.id  %}' >->Plus de détail</a>
+        <a class="nav-link" href='{% url "delete_element" el.id  %}' >->Supprimer l'élément</a>
+        <a class="nav-link" href='{% url "edit_element" el.id  %}' >->Modifier l'élément</a></br>
+    
+        {% endfor %} </ol></div>
+
+    </ul>
+
+    </ol>
+</body>
+</html>
+{% endblock %}

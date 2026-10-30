@@ -1,0 +1,28 @@
+{% extends 'collec_management/menu.html' %}
+
+
+
+{% block title %}Detail des Element{% endblock %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element</title>
+</head>
+<body>
+    <ol>
+        <ul>
+        <li>Titre: {{ element.title }} </li></br>
+        <li>Descritpion: {{ element.description }} </li></br>
+        <li>Date d'ajout:  {{ element.date_ajout }} </li></br>
+        <li>Valeur:  {{ element.value }} </li></br>
+        <li>Quantité:  {{ element.quantity }} </li></br>
+        <li>Collection:  {{ element.collection }} </li></br>
+    </ul>
+    <a class="nav-link" href='{% url "index" %}' >->Retour à la liste des collections</a></br>
+    </ol>
+</body>
+</html>
+{% endblock %}

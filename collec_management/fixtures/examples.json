@@ -1,0 +1,830 @@
+[
+    {
+        "model": "collec_management.collec",
+        "pk": 1,
+        "fields": {
+            "title": "Art Contemporain",
+            "description": "Collection d'art contemporain regroupant des œuvres récentes et avant-gardistes.",
+            "date_creation": "2024-10-01"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 2,
+        "fields": {
+            "title": "Photographies Anciens",
+            "description": "Une collection de photographies anciennes, datant principalement du 19ème siècle.",
+            "date_creation": "2024-10-01"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 3,
+        "fields": {
+            "title": "Livres Rares",
+            "description": "Des livres rares et précieux, dont certains datent du Moyen Âge.",
+            "date_creation": "2024-10-02"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 4,
+        "fields": {
+            "title": "Objets Vintage",
+            "description": "Objets vintage des années 50 et 60, allant des meubles aux accessoires.",
+            "date_creation": "2024-10-02"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 5,
+        "fields": {
+            "title": "Vinyles des Années 70",
+            "description": "Une collection de vinyles iconiques des années 70, couvrant divers genres musicaux.",
+            "date_creation": "2024-10-03"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 6,
+        "fields": {
+            "title": "Timbres du Monde",
+            "description": "Une collection de timbres postaux provenant de différents pays et périodes.",
+            "date_creation": "2024-10-03"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 7,
+        "fields": {
+            "title": "Bandes Dessinées Classiques",
+            "description": "Collection de bandes dessinées classiques, avec des séries célèbres telles que Tintin et Astérix.",
+            "date_creation": "2024-10-04"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 8,
+        "fields": {
+            "title": "Monnaies Anciennes",
+            "description": "Une collection de monnaies anciennes, allant de l'Empire romain aux premières monnaies modernes.",
+            "date_creation": "2024-10-04"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 9,
+        "fields": {
+            "title": "Jouets Rétro",
+            "description": "Collection de jouets rétro des années 80, dont certains modèles sont devenus des objets de collection prisés.",
+            "date_creation": "2024-10-05"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 10,
+        "fields": {
+            "title": "Météorites",
+            "description": "Une collection de météorites provenant de différentes parties du monde.",
+            "date_creation": "2024-10-05"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 11,
+        "fields": {
+            "title": "Instruments de Musique",
+            "description": "Une collection d'instruments de musique anciens, y compris des violons, guitares et pianos.",
+            "date_creation": "2024-10-06"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 12,
+        "fields": {
+            "title": "Céramiques d'Antiquité",
+            "description": "Des céramiques antiques provenant de diverses civilisations anciennes, dont la Grèce et la Chine.",
+            "date_creation": "2024-10-06"
+        }
+    },
+{
+  "model": "collec_management.element",
+  "pk": 2,
+  "fields": {
+    "title": "Element 1",
+    "description": "Description element 1",
+    "value": 10,
+    "quantity": 1,
+    "date_ajout": "2024-12-08T22:32:51Z",
+    "collection": 1
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 3,
+  "fields": {
+    "title": "Element 2",
+    "description": "Description element 2",
+    "value": 11,
+    "quantity": 2,
+    "date_ajout": "2024-12-08T22:33:30Z",
+    "collection": 1
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 4,
+  "fields": {
+    "title": "Element 3",
+    "description": "Description element 3",
+    "value": 13,
+    "quantity": 3,
+    "date_ajout": "2024-12-08T22:34:00Z",
+    "collection": 1
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 5,
+  "fields": {
+    "title": "Element 4",
+    "description": "Description element 4",
+    "value": 14,
+    "quantity": 4,
+    "date_ajout": "2024-12-08T22:34:27Z",
+    "collection": 1
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 6,
+  "fields": {
+    "title": "Element 5",
+    "description": "Description element 5",
+    "value": 15,
+    "quantity": 5,
+    "date_ajout": "2024-12-08T22:35:03Z",
+    "collection": 1
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 7,
+  "fields": {
+    "title": "Element 1",
+    "description": "Description element 1",
+    "value": 10,
+    "quantity": 1,
+    "date_ajout": "2024-12-08T23:29:49Z",
+    "collection": 2
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 8,
+  "fields": {
+    "title": "Element 2",
+    "description": "Description element 2",
+    "value": 12,
+    "quantity": 2,
+    "date_ajout": "2024-12-08T23:30:16Z",
+    "collection": 2
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 9,
+  "fields": {
+    "title": "Element 3",
+    "description": "Description element 3",
+    "value": 13,
+    "quantity": 3,
+    "date_ajout": "2024-12-08T23:30:40Z",
+    "collection": 2
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 10,
+  "fields": {
+    "title": "Element 4",
+    "description": "Description element 4",
+    "value": 14,
+    "quantity": 4,
+    "date_ajout": "2024-12-08T23:31:08Z",
+    "collection": 2
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 11,
+  "fields": {
+    "title": "Element 5",
+    "description": "Description element 5",
+    "value": 15,
+    "quantity": 5,
+    "date_ajout": "2024-12-08T23:31:30Z",
+    "collection": 2
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 12,
+  "fields": {
+    "title": "Element 1",
+    "description": "Description element 1",
+    "value": 11,
+    "quantity": 1,
+    "date_ajout": "2024-12-08T23:31:51Z",
+    "collection": 3
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 13,
+  "fields": {
+    "title": "Element 2",
+    "description": "Description Element 2",
+    "value": 12,
+    "quantity": 2,
+    "date_ajout": "2024-12-08T23:32:18Z",
+    "collection": 3
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 14,
+  "fields": {
+    "title": "Element 3",
+    "description": "Description Element 3",
+    "value": 13,
+    "quantity": 3,
+    "date_ajout": "2024-12-08T23:32:39Z",
+    "collection": 3
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 15,
+  "fields": {
+    "title": "Element 4",
+    "description": "Description Element 4",
+    "value": 14,
+    "quantity": 4,
+    "date_ajout": "2024-12-08T23:33:01Z",
+    "collection": 3
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 16,
+  "fields": {
+    "title": "Element 5",
+    "description": "Description Element 5",
+    "value": 15,
+    "quantity": 5,
+    "date_ajout": "2024-12-08T23:33:34Z",
+    "collection": 3
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 17,
+  "fields": {
+    "title": "Element 1",
+    "description": "Description element 1",
+    "value": 11,
+    "quantity": 1,
+    "date_ajout": "2024-12-08T23:34:00Z",
+    "collection": 4
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 18,
+  "fields": {
+    "title": "Element 2",
+    "description": "Description Element 2",
+    "value": 12,
+    "quantity": 2,
+    "date_ajout": "2024-12-08T23:34:18Z",
+    "collection": 4
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 19,
+  "fields": {
+    "title": "Element 3",
+    "description": "Description Element 3",
+    "value": 13,
+    "quantity": 3,
+    "date_ajout": "2024-12-08T23:34:37Z",
+    "collection": 4
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 20,
+  "fields": {
+    "title": "Element 4",
+    "description": "Description Element 4",
+    "value": 14,
+    "quantity": 4,
+    "date_ajout": "2024-12-08T23:35:00Z",
+    "collection": 4
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 21,
+  "fields": {
+    "title": "Element 5",
+    "description": "Description Element 5",
+    "value": 15,
+    "quantity": 5,
+    "date_ajout": "2024-12-08T23:35:31Z",
+    "collection": 4
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 22,
+  "fields": {
+    "title": "Element 1",
+    "description": "Description Element 1",
+    "value": 11,
+    "quantity": 1,
+    "date_ajout": "2024-12-08T23:36:56Z",
+    "collection": 5
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 23,
+  "fields": {
+    "title": "Element 2",
+    "description": "Description Element 2",
+    "value": 12,
+    "quantity": 2,
+    "date_ajout": "2024-12-08T23:37:16Z",
+    "collection": 5
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 24,
+  "fields": {
+    "title": "Element 3",
+    "description": "Description Element 3",
+    "value": 13,
+    "quantity": 3,
+    "date_ajout": "2024-12-08T23:37:40Z",
+    "collection": 5
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 25,
+  "fields": {
+    "title": "Element 4",
+    "description": "Description Element 4",
+    "value": 14,
+    "quantity": 4,
+    "date_ajout": "2024-12-08T23:37:59Z",
+    "collection": 5
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 26,
+  "fields": {
+    "title": "Element 5",
+    "description": "Description Element 5",
+    "value": 15,
+    "quantity": 5,
+    "date_ajout": "2024-12-08T23:38:17Z",
+    "collection": 5
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 27,
+  "fields": {
+    "title": "Element 1",
+    "description": "Description Element 1",
+    "value": 11,
+    "quantity": 1,
+    "date_ajout": "2024-12-08T23:38:31Z",
+    "collection": 6
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 28,
+  "fields": {
+    "title": "Element 2",
+    "description": "Description Element 2",
+    "value": 12,
+    "quantity": 2,
+    "date_ajout": "2024-12-08T23:38:46Z",
+    "collection": 6
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 29,
+  "fields": {
+    "title": "Element 3",
+    "description": "Description Element 3",
+    "value": 13,
+    "quantity": 3,
+    "date_ajout": "2024-12-08T23:39:01Z",
+    "collection": 6
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 30,
+  "fields": {
+    "title": "Element 4",
+    "description": "Description Element 4",
+    "value": 14,
+    "quantity": 4,
+    "date_ajout": "2024-12-08T23:39:15Z",
+    "collection": 6
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 31,
+  "fields": {
+    "title": "Element 5",
+    "description": "Description Element 5",
+    "value": 15,
+    "quantity": 5,
+    "date_ajout": "2024-12-08T23:39:30Z",
+    "collection": 6
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 32,
+  "fields": {
+    "title": "Element 1",
+    "description": "Description Element 1",
+    "value": 11,
+    "quantity": 1,
+    "date_ajout": "2024-12-08T23:39:47Z",
+    "collection": 7
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 33,
+  "fields": {
+    "title": "Element 2",
+    "description": "Description Element 2",
+    "value": 12,
+    "quantity": 2,
+    "date_ajout": "2024-12-08T23:40:03Z",
+    "collection": 7
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 34,
+  "fields": {
+    "title": "Element 3",
+    "description": "Description Element 3",
+    "value": 13,
+    "quantity": 3,
+    "date_ajout": "2024-12-08T23:40:17Z",
+    "collection": 7
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 35,
+  "fields": {
+    "title": "Element 4",
+    "description": "Description Element 4",
+    "value": 14,
+    "quantity": 4,
+    "date_ajout": "2024-12-08T23:40:38Z",
+    "collection": 7
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 36,
+  "fields": {
+    "title": "Element 5",
+    "description": "Description Element 5",
+    "value": 15,
+    "quantity": 5,
+    "date_ajout": "2024-12-08T23:40:51Z",
+    "collection": 7
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 37,
+  "fields": {
+    "title": "Element 1",
+    "description": "Description Element 1",
+    "value": 11,
+    "quantity": 1,
+    "date_ajout": "2024-12-08T23:41:03Z",
+    "collection": 8
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 38,
+  "fields": {
+    "title": "Element 2",
+    "description": "Description Element 2",
+    "value": 12,
+    "quantity": 2,
+    "date_ajout": "2024-12-08T23:41:16Z",
+    "collection": 8
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 39,
+  "fields": {
+    "title": "Element 3",
+    "description": "Description Element 3",
+    "value": 13,
+    "quantity": 3,
+    "date_ajout": "2024-12-08T23:41:28Z",
+    "collection": 8
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 40,
+  "fields": {
+    "title": "Element 4",
+    "description": "Description Element 4",
+    "value": 14,
+    "quantity": 4,
+    "date_ajout": "2024-12-08T23:41:41Z",
+    "collection": 8
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 41,
+  "fields": {
+    "title": "Element 5",
+    "description": "Description Element 5",
+    "value": 15,
+    "quantity": 5,
+    "date_ajout": "2024-12-08T23:41:58Z",
+    "collection": 8
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 42,
+  "fields": {
+    "title": "Element 1",
+    "description": "Description Element 1",
+    "value": 11,
+    "quantity": 1,
+    "date_ajout": "2024-12-08T23:42:10Z",
+    "collection": 9
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 43,
+  "fields": {
+    "title": "Element 2",
+    "description": "Description Element 2",
+    "value": 12,
+    "quantity": 2,
+    "date_ajout": "2024-12-08T23:42:25Z",
+    "collection": 9
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 44,
+  "fields": {
+    "title": "Element 3",
+    "description": "Description Element 3",
+    "value": 13,
+    "quantity": 3,
+    "date_ajout": "2024-12-08T23:42:37Z",
+    "collection": 9
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 45,
+  "fields": {
+    "title": "Element 4",
+    "description": "Description Element 4",
+    "value": 14,
+    "quantity": 4,
+    "date_ajout": "2024-12-08T23:42:52Z",
+    "collection": 9
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 46,
+  "fields": {
+    "title": "Element 5",
+    "description": "Description Element 5",
+    "value": 15,
+    "quantity": 5,
+    "date_ajout": "2024-12-08T23:43:09Z",
+    "collection": 9
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 47,
+  "fields": {
+    "title": "Element 1",
+    "description": "Description Element 1",
+    "value": 11,
+    "quantity": 1,
+    "date_ajout": "2024-12-08T23:43:20Z",
+    "collection": 10
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 48,
+  "fields": {
+    "title": "Element 2",
+    "description": "Description Element 2",
+    "value": 12,
+    "quantity": 2,
+    "date_ajout": "2024-12-08T23:43:33Z",
+    "collection": 10
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 49,
+  "fields": {
+    "title": "Element 3",
+    "description": "Description Element 3",
+    "value": 13,
+    "quantity": 3,
+    "date_ajout": "2024-12-08T23:43:47Z",
+    "collection": 10
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 50,
+  "fields": {
+    "title": "Element 4",
+    "description": "Description Element 4",
+    "value": 14,
+    "quantity": 4,
+    "date_ajout": "2024-12-08T23:43:57Z",
+    "collection": 10
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 51,
+  "fields": {
+    "title": "Element 5",
+    "description": "Description Element 5",
+    "value": 15,
+    "quantity": 5,
+    "date_ajout": "2024-12-08T23:44:15Z",
+    "collection": 10
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 52,
+  "fields": {
+    "title": "Element 1",
+    "description": "Description Element 1",
+    "value": 11,
+    "quantity": 1,
+    "date_ajout": "2024-12-08T23:44:28Z",
+    "collection": 11
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 53,
+  "fields": {
+    "title": "Element 2",
+    "description": "Description Element 2",
+    "value": 12,
+    "quantity": 2,
+    "date_ajout": "2024-12-08T23:44:49Z",
+    "collection": 11
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 54,
+  "fields": {
+    "title": "Element 3",
+    "description": "Description Element 3",
+    "value": 13,
+    "quantity": 3,
+    "date_ajout": "2024-12-08T23:45:08Z",
+    "collection": 11
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 55,
+  "fields": {
+    "title": "Element 4",
+    "description": "Description Element 4",
+    "value": 14,
+    "quantity": 4,
+    "date_ajout": "2024-12-08T23:45:22Z",
+    "collection": 11
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 56,
+  "fields": {
+    "title": "Element 5",
+    "description": "Description Element 5",
+    "value": 15,
+    "quantity": 5,
+    "date_ajout": "2024-12-08T23:45:35Z",
+    "collection": 11
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 57,
+  "fields": {
+    "title": "Element 1",
+    "description": "Description Element 1",
+    "value": 11,
+    "quantity": 1,
+    "date_ajout": "2024-12-08T23:45:48Z",
+    "collection": 12
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 58,
+  "fields": {
+    "title": "Element 2",
+    "description": "Description Element 2",
+    "value": 12,
+    "quantity": 2,
+    "date_ajout": "2024-12-08T23:46:06Z",
+    "collection": 12
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 59,
+  "fields": {
+    "title": "Element 3",
+    "description": "Description Element 3",
+    "value": 13,
+    "quantity": 3,
+    "date_ajout": "2024-12-08T23:46:19Z",
+    "collection": 12
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 60,
+  "fields": {
+    "title": "Element 4",
+    "description": "Description Element 4",
+    "value": 14,
+    "quantity": 4,
+    "date_ajout": "2024-12-08T23:46:32Z",
+    "collection": 12
+  }
+},
+{
+  "model": "collec_management.element",
+  "pk": 61,
+  "fields": {
+    "title": "Element 5",
+    "description": "Description Element 5",
+    "value": 15,
+    "quantity": 5,
+    "date_ajout": "2024-12-08T23:46:45Z",
+    "collection": 12
+  }
+}
+]

@@ -1,0 +1,35 @@
+{% extends 'collec_management/menu.html' %}
+
+
+
+{% block title %}Supprimer un Element{% endblock %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppression</title>
+</head>
+<body>
+    <p>
+        Supprimer l'element {{ element.title }} ( n° {{ element.id }})</br>
+            Titre : {{ element.title }}</br>
+            Date : {{ element.date_ajout }}</br>
+            Description : {{ element.description }}</br>
+            Valeur : {{ element.value }}</br>
+            Quantité : {{ element.quantity }}</br>
+    </p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" name="delete">Supprimer l'element</button>
+    </form>
+    <p><a href='{% url "menu" %}'>Retour au menu</a></p>
+   
+
+    
+    
+</body>
+
+</html>
+{% endblock %}

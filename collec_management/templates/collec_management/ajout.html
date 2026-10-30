@@ -1,0 +1,48 @@
+{% extends 'collec_management/menu.html' %}
+
+
+
+{% block title %}Modifier Collection{% endblock %}
+
+{% block content %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+
+
+    <!--
+    <form method="post">
+
+  
+        <fieldset>
+            <legend>Création de Formulaire</legend>
+                <label for="title">Titre de la collection</label><br>
+                <input type="text" id="title" name="title"><br>
+                <label for="descritpion">Descritpion</label><br>
+                <input type="text" id="description" name="descritpion"><br>
+                <button type="submit" id="submit">Valider</button>
+        </fieldset>
+
+    </form>
+    -->
+    
+
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" class="btn btn-primary" value="{{ button_label }}">
+    </form>
+
+    <a href="{% url 'index' %}" class="btn btn-secondary mt-2">Retour à la liste des collections</a>
+    
+    
+
+</body>
+</html>
+{% endblock %}

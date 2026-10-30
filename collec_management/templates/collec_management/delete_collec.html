@@ -1,0 +1,32 @@
+{% extends 'collec_management/menu.html' %}
+
+
+
+{% block title %}Supprimer{% endblock %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppression</title>
+</head>
+<body>
+    <p>
+        Supprimer la collection {{ collection.title }} ( n° {{ collection.id }})</br>
+            Titre : {{ collection.title }}</br>
+            Date : {{ collection.date_creation }}</br>
+            Description : {{ collection.description }}</br>
+    </p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" name="delete">Supprimer</button>
+    </form>
+    <p><a href='{% url "index" %}'>Retour vers toutes les collections</a></p>
+   
+
+    
+    
+</body>
+</html>
+{% endblock %}

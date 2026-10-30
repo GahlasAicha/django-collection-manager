@@ -1,0 +1,33 @@
+{% extends 'collec_management/menu.html' %}
+
+
+
+{% block title %}Modifier Collection{% endblock %}
+
+{% block content %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Element</title>
+</head>
+<body>
+
+    
+
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" class="btn btn-primary" value="{{ button_label }}">
+    </form>
+
+    <a href="{% url 'menu' %}" class="btn btn-secondary mt-2">Retour au menu</a>
+    
+    
+
+</body>
+
+</html>
+{% endblock %}
